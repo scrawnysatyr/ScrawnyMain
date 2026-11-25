@@ -63,63 +63,21 @@
       </header>
 
       <main>
-        <section class="profile-card" aria-labelledby="profile-heading">
-          <div class="profile-avatar" aria-hidden="true">
-            <svg viewBox="0 0 64 64" width="44" height="44" fill="none">
-              <path
-                d="M44 18.5C41.2 15.8 36.8 14.5 31.8 14.5C23.6 14.5 18 18.6 18 24.4C18 30.2 23.2 32.5 31.4 34.1C38.4 35.5 41.8 37.1 41.8 41C41.8 45.1 37.7 47.8 31.4 47.8C25.9 47.8 21.3 45.8 17.8 42.4"
-                stroke="#ff7300"
-                stroke-width="6"
-                stroke-linecap="round"
-              />
-              <circle cx="48" cy="46" r="4" fill="#ffffff" />
-            </svg>
-          </div>
-
-          <div class="profile-body">
-            <div class="profile-title-row">
-              <h1 id="profile-heading">Scrawny</h1>
-              <span class="status-pill">
-                <span class="status-dot" aria-hidden="true"></span>
-                Building tools &amp; web apps
-              </span>
-            </div>
-            <p class="profile-bio">
-              Developer crafting fast, zero-bloat desktop utilities and serverless peer-to-peer web
-              experiences. Explore my tools on GitHub or jump straight into hosted
-              <span class="mono accent">*.scrawny.site</span> subdomains below.
-            </p>
-            <div class="profile-meta">
-              <a
-                class="meta-chip meta-chip-primary"
-                href="https://github.com/scrawnysatyr"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub Profile
-                <span aria-hidden="true">&nearr;</span>
-              </a>
-              <span class="meta-chip">Rust &amp; TypeScript</span>
-              <span class="meta-chip">P2P &amp; Desktop</span>
-            </div>
-          </div>
-        </section>
-
         <section class="directory-section" aria-labelledby="directory-heading">
           <div class="section-header">
             <div>
-              <h2 id="directory-heading">Tools &amp; Subdomains</h2>
-              <p class="section-subtitle">Direct links to active repositories and live subdomains.</p>
+              <h1 id="directory-heading" style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: #ffffff;">Tools &amp; Subdomains</h1>
+              <p class="section-subtitle">Direct links to Scrawny desktop utilities and live <span class="mono accent">*.scrawny.site</span> web apps.</p>
             </div>
             <div class="filter-bar" role="tablist" aria-label="Filter projects">
               <button class="filter-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">
                 All
               </button>
               <button class="filter-btn" type="button" data-filter="tool" role="tab" aria-selected="false">
-                Tools
+                Desktop Tools
               </button>
               <button class="filter-btn" type="button" data-filter="subdomain" role="tab" aria-selected="false">
-                Subdomains
+                Web Apps
               </button>
             </div>
           </div>
@@ -128,7 +86,7 @@
             <a
               class="project-card"
               data-category="tool"
-              href="https://github.com/scrawnysatyr/scrawnysummoner"
+              href="https://summoner.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -142,17 +100,16 @@
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Tool</span>
-                  <span class="badge badge-muted">GitHub</span>
+                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
               <div class="card-content">
-                <h3>ScrawnySummoner</h3>
-                <p class="card-destination mono">github.com/scrawnysatyr/scrawnysummoner</p>
+                <h3>Scrawny Summoner</h3>
+                <p class="card-destination mono">summoner.scrawny.site</p>
                 <p class="card-description">
-                  Native desktop download manager and stream summoner built in Rust with GPUI.
-                  Handles direct files, BitTorrent, yt-dlp videos, and HLS/DASH streams with a
-                  companion Chrome extension.
+                  Native download manager tool built in Rust with GPUI. Handles direct files,
+                  BitTorrent, yt-dlp videos, and HLS/DASH streams with a companion Chrome extension.
                 </p>
               </div>
 
@@ -164,7 +121,7 @@
                   <li>yt-dlp</li>
                 </ul>
                 <span class="card-cta">
-                  Open GitHub <span aria-hidden="true">&nearr;</span>
+                  Visit Site <span aria-hidden="true">&nearr;</span>
                 </span>
               </div>
             </a>
@@ -184,18 +141,17 @@
                   </svg>
                 </div>
                 <div class="card-badges">
-                  <span class="badge badge-orange">Subdomain</span>
+                  <span class="badge badge-orange">Web App</span>
                   <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
               <div class="card-content">
-                <h3>ScrawnyBoards</h3>
+                <h3>Scrawny Boards</h3>
                 <p class="card-destination mono">boards.scrawny.site</p>
                 <p class="card-description">
-                  Serverless peer-to-peer board game hub starting with Ohno! — a tactical card
-                  game over WebRTC with zero login, 2D fan animations, custom room links, and
-                  spectator mode.
+                  Turn-based &amp; peer-to-peer board game hub over WebRTC with zero login, 2D fan
+                  animations, custom room links, and spectator mode.
                 </p>
               </div>
 
@@ -229,17 +185,17 @@
                   </svg>
                 </div>
                 <div class="card-badges">
-                  <span class="badge badge-orange">Subdomain</span>
+                  <span class="badge badge-orange">Web App</span>
                   <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
               <div class="card-content">
-                <h3>ScrawnyPDF</h3>
+                <h3>Scrawny PDF</h3>
                 <p class="card-destination mono">pdf.scrawny.site</p>
                 <p class="card-description">
-                  Client-side image &amp; PDF converter with drag-and-drop page reordering, custom
-                  paper sizes, margins, and 5-level compression — 100% private in the browser.
+                  PDF maker tool — convert anything to PDF with drag-and-drop page reordering,
+                  real-time paper preview, margins, and 5-level compression in the browser.
                 </p>
               </div>
 
@@ -255,12 +211,99 @@
                 </span>
               </div>
             </a>
+
+            <a
+              class="project-card"
+              data-category="subdomain"
+              href="https://ocr.scrawny.site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                    <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                    <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                    <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                    <path d="M7 12h10" />
+                  </svg>
+                </div>
+                <div class="card-badges">
+                  <span class="badge badge-orange">Web App</span>
+                  <span class="badge badge-live">Live</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h3>Scrawny OCR</h3>
+                <p class="card-destination mono">ocr.scrawny.site</p>
+                <p class="card-description">
+                  Text extraction from Images and PDFs — fast client-side OCR running directly in
+                  your browser with zero server uploads.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tech-list" aria-label="Technologies">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>ONNX</li>
+                  <li>WebGPU</li>
+                </ul>
+                <span class="card-cta">
+                  Visit Subdomain <span aria-hidden="true">&nearr;</span>
+                </span>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              data-category="tool"
+              href="https://enhance.scrawny.site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-top">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
+                  </svg>
+                </div>
+                <div class="card-badges">
+                  <span class="badge badge-orange">Tool</span>
+                  <span class="badge badge-live">Live</span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h3>Scrawny Enhance</h3>
+                <p class="card-destination mono">enhance.scrawny.site</p>
+                <p class="card-description">
+                  Image and video enhancement via AI running locally on your machine — native
+                  desktop app built with Rust &amp; GPUI with zero cloud limits.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tech-list" aria-label="Technologies">
+                  <li>Rust</li>
+                  <li>GPUI</li>
+                  <li>Local AI</li>
+                  <li>Image/Video</li>
+                </ul>
+                <span class="card-cta">
+                  Visit Site <span aria-hidden="true">&nearr;</span>
+                </span>
+              </div>
+            </a>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <span><span class="accent">scrawny.site</span> &mdash; Main Hub</span>
+        <span class="mono">github.com/scrawnysatyr</span>
         <span class="mono">
           <a href="./privacy.html" style="color: inherit; text-decoration: none;">Privacy Policy</a>
           &middot; github.com/scrawnysatyr
