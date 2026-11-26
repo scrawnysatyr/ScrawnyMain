@@ -5,14 +5,14 @@ const TOOL_DETAILS = {
     url: "https://summoner.scrawny.site",
     domain: "summoner.scrawny.site",
     description:
-      "Native download manager tool built in Rust with GPUI. Handles direct files, BitTorrent, yt-dlp videos, and HLS/DASH streams with a companion Chrome extension.",
+      "Download direct files, videos, music, and torrents in one fast desktop app—with pause/resume, queue control, and a browser extension.",
     features: [
-      "Multi-connection direct file downloads & queue control",
-      "Built-in BitTorrent & magnet link support",
-      "Video & audio extraction via yt-dlp and HLS/DASH streams",
-      "Companion Chrome extension for one-click capture",
+      "Speed up file downloads with pause, resume, and queue control",
+      "Download torrents and magnet links right inside the app",
+      "Save online videos and audio in your preferred quality",
+      "Grab links in one click using the companion Chrome extension",
     ],
-    tech: ["Rust", "GPUI", "BitTorrent", "yt-dlp"],
+    tech: ["Downloads", "Torrents", "Video & Audio", "Browser Extension"],
   },
   boards: {
     title: "Scrawny Boards",
@@ -20,14 +20,14 @@ const TOOL_DETAILS = {
     url: "https://boards.scrawny.site",
     domain: "boards.scrawny.site",
     description:
-      "Turn-based & peer-to-peer board game hub over WebRTC with zero login, 2D fan animations, custom room links, and spectator mode.",
+      "Jump into turn-based board and card games with friends in seconds. Create a room, share the link, and play together with no account required.",
     features: [
-      "Direct peer-to-peer multiplayer over WebRTC with zero accounts",
-      "Shareable custom room links & live spectator mode",
-      "Smooth 2D card fan animations and tabletop UI",
-      "Fast edge signaling powered by Cloudflare",
+      "Play Ohno!, Wild PUSH!, The Millionaire, and Bluff or Wheel",
+      "Create public or private rooms and invite friends with a code or link",
+      "Play solo or fill empty seats with smart bots anytime",
+      "Watch live matches as a spectator with zero login needed",
     ],
-    tech: ["React 19", "WebRTC", "TypeScript", "Cloudflare"],
+    tech: ["Board Games", "Card Games", "Multiplayer", "No Account"],
   },
   pdf: {
     title: "Scrawny PDF",
@@ -35,14 +35,14 @@ const TOOL_DETAILS = {
     url: "https://pdf.scrawny.site",
     domain: "pdf.scrawny.site",
     description:
-      "PDF maker tool — convert anything to PDF with drag-and-drop page reordering, real-time paper preview, margins, and 5-level compression in the browser.",
+      "Turn images and documents into clean PDFs right in your browser. Reorder or rotate pages, preview paper sizes, and shrink file sizes privately.",
     features: [
-      "Drag-and-drop page reordering, rotation, and merging",
-      "Real-time paper size & margin preview",
-      "5-level PDF compression running 100% in your browser",
-      "Private client-side processing with pdf-lib",
+      "Combine images and PDFs, then drag to reorder or rotate pages",
+      "Preview paper sizes, margins, and layout before saving",
+      "Shrink large PDFs with 5 compression levels",
+      "Everything runs on your device—no files are uploaded",
     ],
-    tech: ["React", "TypeScript", "pdf-lib", "Tailwind"],
+    tech: ["Create PDF", "Reorder Pages", "Compress", "Private"],
   },
   ocr: {
     title: "Scrawny OCR",
@@ -50,14 +50,14 @@ const TOOL_DETAILS = {
     url: "https://ocr.scrawny.site",
     domain: "ocr.scrawny.site",
     description:
-      "Text extraction from Images and PDFs — fast client-side OCR running directly in your browser with zero server uploads.",
+      "Pull editable text out of screenshots, photos, and multi-page PDFs in seconds—everything stays private on your own device.",
     features: [
-      "Extract text from images and multi-page PDFs",
-      "Hardware-accelerated local inference via ONNX & WebGPU",
-      "Zero server uploads — your documents stay on your device",
-      "Fast copy & export workflow",
+      "Read and copy text from photos, screenshots, and scanned PDFs",
+      "Process multi-page documents quickly in your browser",
+      "Your files never leave your device—zero cloud uploads",
+      "Copy results or export clean text in one click",
     ],
-    tech: ["React", "TypeScript", "ONNX", "WebGPU"],
+    tech: ["Image to Text", "PDF Scanner", "Offline Ready", "Private"],
   },
   enhance: {
     title: "Scrawny Enhance",
@@ -65,14 +65,14 @@ const TOOL_DETAILS = {
     url: "https://enhancer.scrawny.site",
     domain: "enhancer.scrawny.site",
     description:
-      "Image and video enhancement via AI running locally on your machine — native desktop app built with Rust & GPUI with zero cloud limits.",
+      "Make blurry photos and low-res videos crisp and clear using AI models right on your own computer—no subscriptions or cloud limits.",
     features: [
-      "AI upscaling & restoration for images and videos",
-      "Runs 100% locally on your GPU/CPU with zero cloud quotas",
-      "Before/after split preview window",
-      "Native Rust + GPUI desktop performance",
+      "Upscale and restore photos and videos directly on your PC",
+      "Compare before and after side-by-side in a live preview",
+      "Unlimited usage with no watermarks or cloud queues",
+      "Works completely offline using your own computer's power",
     ],
-    tech: ["Rust", "GPUI", "Local AI", "Image/Video"],
+    tech: ["Photo Upscale", "Video Upscale", "Offline AI", "No Limits"],
   },
 };
 

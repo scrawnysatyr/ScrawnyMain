@@ -160,17 +160,18 @@ body {
 }
 
 .topbar-orange {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #050505;
-  font-weight: 700;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.topbar-orange svg {
+  color: var(--accent);
 }
 
 .topbar-orange:hover {
-  background: #ff851f;
-  border-color: #ff851f;
-  color: #050505;
-  transform: translateY(-1px);
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--bg-hover);
 }
 
 main {
@@ -381,10 +382,10 @@ main {
 
 .card-bg-svg {
   position: absolute;
-  right: -12px;
-  bottom: -12px;
-  width: 165px;
-  height: 135px;
+  right: 12px;
+  bottom: 12px;
+  width: 145px;
+  height: 118px;
   pointer-events: none;
   z-index: 0;
   opacity: 0.14;
