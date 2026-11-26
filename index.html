@@ -39,7 +39,21 @@
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow" aria-hidden="true"></div>
 
-    <div class="page-shell">
+    <div class="site-layout">
+      <aside class="ad-rail ad-rail-left" aria-label="Advertisement">
+        <div class="ad-slot">
+          <span class="ad-label">Advertisement</span>
+          <ins
+            class="adsbygoogle"
+            style="display:block;width:160px;height:600px"
+            data-ad-client="ca-pub-6500933651501591"
+            data-ad-format="vertical"
+          ></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </aside>
+
+      <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="./">
           <span class="brand-mark" aria-hidden="true">S</span>
@@ -67,17 +81,20 @@
           <div class="section-header">
             <div>
               <h1 id="directory-heading" style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: #ffffff;">Tools &amp; Subdomains</h1>
-              <p class="section-subtitle">Direct links to Scrawny desktop utilities and live <span class="mono accent">*.scrawny.site</span> web apps.</p>
+              <p class="section-subtitle">Direct links to Scrawny desktop tools, web apps, and web games on <span class="mono accent">*.scrawny.site</span>.</p>
             </div>
             <div class="filter-bar" role="tablist" aria-label="Filter projects">
               <button class="filter-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">
                 All
               </button>
-              <button class="filter-btn" type="button" data-filter="tool" role="tab" aria-selected="false">
+              <button class="filter-btn" type="button" data-filter="desktop" role="tab" aria-selected="false">
                 Desktop Tools
               </button>
-              <button class="filter-btn" type="button" data-filter="subdomain" role="tab" aria-selected="false">
-                Web Apps
+              <button class="filter-btn" type="button" data-filter="webapp" role="tab" aria-selected="false">
+                Web App
+              </button>
+              <button class="filter-btn" type="button" data-filter="webgames" role="tab" aria-selected="false">
+                Web Games
               </button>
             </div>
           </div>
@@ -85,11 +102,29 @@
           <div class="cards-grid" id="cards-grid">
             <a
               class="project-card"
-              data-category="tool"
+              data-category="desktop"
               href="https://summoner.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
+                <!-- Video/Stream window -->
+                <rect x="26" y="20" width="96" height="62" rx="8" stroke="#ffffff" stroke-width="2" />
+                <path d="M26 36h96" stroke="#ffffff" stroke-width="1.5" opacity="0.6" />
+                <polygon points="66,46 66,68 85,57" fill="#ff7300" opacity="0.85" />
+                <!-- P2P / Torrent nodes -->
+                <circle cx="176" cy="34" r="10" stroke="#ff7300" stroke-width="2" />
+                <circle cx="212" cy="58" r="8" stroke="#ffffff" stroke-width="1.8" />
+                <circle cx="164" cy="76" r="8" stroke="#ffffff" stroke-width="1.8" />
+                <path d="M184 40l21 13M172 44l-6 24M172 74l32-13" stroke="#ff7300" stroke-width="1.6" stroke-dasharray="3 3" />
+                <!-- Summon download arrow -->
+                <path d="M126 62v58" stroke="#ff7300" stroke-width="4" stroke-linecap="round" />
+                <path d="M108 104l18 20 18-20" stroke="#ff7300" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <!-- Download tray & progress bar -->
+                <rect x="44" y="134" width="164" height="36" rx="9" stroke="#ffffff" stroke-width="2" />
+                <rect x="58" y="147" width="102" height="10" rx="5" fill="#ff7300" opacity="0.75" />
+                <rect x="166" y="147" width="28" height="10" rx="5" fill="#ffffff" opacity="0.3" />
+              </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -99,7 +134,7 @@
                   </svg>
                 </div>
                 <div class="card-badges">
-                  <span class="badge badge-orange">Tool</span>
+                  <span class="badge badge-orange">Desktop Tools</span>
                   <span class="badge badge-live">Live</span>
                 </div>
               </div>
@@ -128,11 +163,30 @@
 
             <a
               class="project-card"
-              data-category="subdomain"
+              data-category="webgames"
               href="https://boards.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
+                <!-- Game board grid -->
+                <rect x="26" y="88" width="96" height="80" rx="8" stroke="#ffffff" stroke-width="2" />
+                <path d="M58 88v80M90 88v80M26 115h96M26 141h96" stroke="#ffffff" stroke-width="1.3" opacity="0.45" />
+                <!-- Game piece / pawn -->
+                <circle cx="74" cy="128" r="9" fill="#ff7300" opacity="0.85" />
+                <circle cx="42" cy="102" r="7" stroke="#ffffff" stroke-width="2" />
+                <!-- Fanned playing cards -->
+                <rect x="116" y="26" width="52" height="74" rx="7" transform="rotate(-12 116 26)" stroke="#ffffff" stroke-width="2" fill="#1c1c22" />
+                <rect x="144" y="22" width="52" height="74" rx="7" transform="rotate(8 144 22)" stroke="#ff7300" stroke-width="2.2" fill="#1c1c22" />
+                <path d="M167 48l5 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z" fill="#ff7300" opacity="0.8" />
+                <!-- Dice -->
+                <rect x="156" y="114" width="52" height="52" rx="10" stroke="#ffffff" stroke-width="2" />
+                <circle cx="170" cy="128" r="3.5" fill="#ff7300" />
+                <circle cx="194" cy="128" r="3.5" fill="#ff7300" />
+                <circle cx="182" cy="140" r="3.5" fill="#ff7300" />
+                <circle cx="170" cy="152" r="3.5" fill="#ff7300" />
+                <circle cx="194" cy="152" r="3.5" fill="#ff7300" />
+              </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -141,7 +195,7 @@
                   </svg>
                 </div>
                 <div class="card-badges">
-                  <span class="badge badge-orange">Web App</span>
+                  <span class="badge badge-orange">Web Games</span>
                   <span class="badge badge-live">Live</span>
                 </div>
               </div>
@@ -170,11 +224,24 @@
 
             <a
               class="project-card"
-              data-category="subdomain"
+              data-category="webapp"
               href="https://pdf.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
+                <!-- Back stacked page -->
+                <rect x="44" y="34" width="92" height="122" rx="8" transform="rotate(-7 44 34)" stroke="#ffffff" stroke-width="1.8" opacity="0.55" />
+                <!-- Front document page with folded corner -->
+                <path d="M92 24h76l26 26v112a8 8 0 0 1-8 8H92a8 8 0 0 1-8-8V32a8 8 0 0 1 8-8z" stroke="#ffffff" stroke-width="2.2" fill="#1c1c22" />
+                <path d="M168 24v26h26" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+                <!-- Page content preview -->
+                <rect x="102" y="64" width="74" height="30" rx="4" stroke="#ff7300" stroke-width="1.8" />
+                <path d="M102 110h74M102 124h56M102 138h64" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.65" />
+                <!-- Reorder / Compress arrows -->
+                <path d="M206 74v34M198 100l8 8 8-8" stroke="#ff7300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M206 154v-34M198 128l8-8 8 8" stroke="#ff7300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -214,11 +281,24 @@
 
             <a
               class="project-card"
-              data-category="subdomain"
+              data-category="webapp"
               href="https://ocr.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
+                <!-- Scanner frame corners -->
+                <path d="M30 46V28a6 6 0 0 1 6-6h18M112 22h18a6 6 0 0 1 6 6v18M136 144v18a6 6 0 0 1-6 6h-18M54 168H36a6 6 0 0 1-6-6v-18" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+                <!-- Image landscape inside scanner -->
+                <rect x="44" y="38" width="78" height="114" rx="6" stroke="#ffffff" stroke-width="1.6" opacity="0.5" />
+                <circle cx="64" cy="60" r="8" stroke="#ffffff" stroke-width="1.8" opacity="0.7" />
+                <path d="M48 112l22-24 18 18 14-14 16 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+                <!-- Laser scan line -->
+                <path d="M24 94h118" stroke="#ff7300" stroke-width="3" stroke-linecap="round" />
+                <!-- Extracted text output lines -->
+                <path d="M148 74l14 14-14 14" stroke="#ff7300" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M172 54h46M172 74h52M172 94h38M172 114h50M172 134h32" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.75" />
+              </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -259,11 +339,30 @@
 
             <a
               class="project-card"
-              data-category="tool"
+              data-category="desktop"
               href="https://enhancer.scrawny.site"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
+                <!-- Split before/after image & video frame -->
+                <rect x="28" y="34" width="176" height="122" rx="10" stroke="#ffffff" stroke-width="2.2" />
+                <!-- Left pixelated low-res grid -->
+                <rect x="42" y="54" width="18" height="18" fill="#ffffff" opacity="0.2" />
+                <rect x="64" y="54" width="18" height="18" fill="#ffffff" opacity="0.35" />
+                <rect x="42" y="76" width="18" height="18" fill="#ffffff" opacity="0.35" />
+                <rect x="64" y="76" width="18" height="18" fill="#ffffff" opacity="0.18" />
+                <rect x="42" y="98" width="18" height="18" fill="#ffffff" opacity="0.25" />
+                <rect x="64" y="98" width="18" height="18" fill="#ffffff" opacity="0.4" />
+                <!-- Center enhancement divider -->
+                <path d="M116 24v142" stroke="#ff7300" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="116" cy="95" r="10" fill="#1c1c22" stroke="#ff7300" stroke-width="2.2" />
+                <path d="M112 95h8M116 91v8" stroke="#ff7300" stroke-width="2" stroke-linecap="round" />
+                <!-- Right crisp high-res mountain + AI sparkles -->
+                <path d="M124 134l24-34 18 22 14-16 16 28z" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+                <path d="M168 48l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#ff7300" />
+                <path d="M188 74l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#ff7300" opacity="0.85" />
+              </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -271,7 +370,7 @@
                   </svg>
                 </div>
                 <div class="card-badges">
-                  <span class="badge badge-orange">Tool</span>
+                  <span class="badge badge-orange">Desktop Tools</span>
                   <span class="badge badge-live">Live</span>
                 </div>
               </div>
@@ -309,6 +408,20 @@
           &middot; github.com/scrawnysatyr
         </span>
       </footer>
+      </div>
+
+      <aside class="ad-rail ad-rail-right" aria-label="Advertisement">
+        <div class="ad-slot">
+          <span class="ad-label">Advertisement</span>
+          <ins
+            class="adsbygoogle"
+            style="display:block;width:160px;height:600px"
+            data-ad-client="ca-pub-6500933651501591"
+            data-ad-format="vertical"
+          ></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </aside>
     </div>
 
     <script src="./script.js"></script>
