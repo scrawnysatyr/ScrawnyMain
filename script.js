@@ -77,8 +77,27 @@ const TOOL_DETAILS = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  const CATEGORY_ORDER = {
+    desktop: 0,
+    webgames: 1,
+    webapp: 2,
+  };
+
+  const grid = document.getElementById("cards-grid");
   const filterButtons = document.querySelectorAll(".filter-btn");
-  const cards = document.querySelectorAll(".project-card");
+  const cards = Array.from(document.querySelectorAll(".project-card"));
+
+  if (grid) {
+    cards.sort((a, b) => {
+      const catA = CATEGORY_ORDER[a.getAttribute("data-category")] ?? 99;
+      const catB = CATEGORY_ORDER[b.getAttribute("data-category")] ?? 99;
+      if (catA !== catB) return catA - catB;
+      const nameA = a.querySelector("h3")?.textContent.trim() || "";
+      const nameB = b.querySelector("h3")?.textContent.trim() || "";
+      return nameA.localeCompare(nameB);
+    });
+    cards.forEach((card) => grid.appendChild(card));
+  }
   const modal = document.getElementById("tool-modal");
   const modalIcon = document.getElementById("modal-icon");
   const modalCategory = document.getElementById("modal-category");
