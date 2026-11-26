@@ -90,12 +90,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 10px 8px;
+  padding: 12px 8px;
   border-radius: var(--radius-md);
-  background: rgba(12, 12, 13, 0.85);
-  border: 1px solid var(--border);
-  min-height: 626px;
+  background: rgba(12, 12, 13, 0.75);
+  border: 1px dashed var(--border);
+  min-height: 600px;
 }
 
 .ad-label {
@@ -103,6 +104,12 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+.ad-placeholder-size {
+  font-size: 0.72rem;
+  color: rgba(138, 138, 147, 0.55);
   font-family: var(--font-mono);
 }
 
