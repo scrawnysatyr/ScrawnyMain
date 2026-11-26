@@ -107,12 +107,13 @@
           </div>
 
           <div class="cards-grid" id="cards-grid">
-            <a
+            <article
               class="project-card"
               data-category="desktop"
-              href="https://summoner.scrawny.site"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-tool="summoner"
+              tabindex="0"
+              role="button"
+              aria-label="View details for Scrawny Summoner"
             >
               <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
                 <!-- Video/Stream window -->
@@ -134,7 +135,7 @@
               </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 3v12" />
                     <path d="m7 10 5 5 5-5" />
                     <path d="M5 20h14" />
@@ -142,7 +143,6 @@
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Desktop Tools</span>
-                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
@@ -150,8 +150,7 @@
                 <h3>Scrawny Summoner</h3>
                 <p class="card-destination mono">summoner.scrawny.site</p>
                 <p class="card-description">
-                  Native download manager tool built in Rust with GPUI. Handles direct files,
-                  BitTorrent, yt-dlp videos, and HLS/DASH streams with a companion Chrome extension.
+                  Native Rust download manager for direct files, torrents, and streams.
                 </p>
               </div>
 
@@ -159,21 +158,20 @@
                 <ul class="tech-list" aria-label="Technologies">
                   <li>Rust</li>
                   <li>GPUI</li>
-                  <li>BitTorrent</li>
-                  <li>yt-dlp</li>
                 </ul>
                 <span class="card-cta">
-                  Visit Site <span aria-hidden="true">&nearr;</span>
+                  Details <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
-            </a>
+            </article>
 
-            <a
+            <article
               class="project-card"
               data-category="webgames"
-              href="https://boards.scrawny.site"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-tool="boards"
+              tabindex="0"
+              role="button"
+              aria-label="View details for Scrawny Boards"
             >
               <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
                 <!-- Game board grid -->
@@ -196,14 +194,13 @@
               </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="4" y="4" width="11" height="15" rx="2" />
                     <path d="M9 4h8a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H9" />
                   </svg>
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Web Games</span>
-                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
@@ -211,8 +208,7 @@
                 <h3>Scrawny Boards</h3>
                 <p class="card-destination mono">boards.scrawny.site</p>
                 <p class="card-description">
-                  Turn-based &amp; peer-to-peer board game hub over WebRTC with zero login, 2D fan
-                  animations, custom room links, and spectator mode.
+                  Peer-to-peer board game hub over WebRTC with zero login.
                 </p>
               </div>
 
@@ -220,21 +216,20 @@
                 <ul class="tech-list" aria-label="Technologies">
                   <li>React 19</li>
                   <li>WebRTC</li>
-                  <li>TypeScript</li>
-                  <li>Cloudflare</li>
                 </ul>
                 <span class="card-cta">
-                  Visit Subdomain <span aria-hidden="true">&nearr;</span>
+                  Details <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
-            </a>
+            </article>
 
-            <a
+            <article
               class="project-card"
               data-category="webapp"
-              href="https://pdf.scrawny.site"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-tool="pdf"
+              tabindex="0"
+              role="button"
+              aria-label="View details for Scrawny PDF"
             >
               <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
                 <!-- Back stacked page -->
@@ -251,7 +246,7 @@
               </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                     <path d="M14 2v6h6" />
                     <path d="M9 15h6" />
@@ -260,7 +255,6 @@
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Web App</span>
-                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
@@ -268,30 +262,28 @@
                 <h3>Scrawny PDF</h3>
                 <p class="card-destination mono">pdf.scrawny.site</p>
                 <p class="card-description">
-                  PDF maker tool — convert anything to PDF with drag-and-drop page reordering,
-                  real-time paper preview, margins, and 5-level compression in the browser.
+                  Browser PDF maker with page reordering, live preview &amp; compression.
                 </p>
               </div>
 
               <div class="card-footer">
                 <ul class="tech-list" aria-label="Technologies">
                   <li>React</li>
-                  <li>TypeScript</li>
                   <li>pdf-lib</li>
-                  <li>Tailwind</li>
                 </ul>
                 <span class="card-cta">
-                  Visit Subdomain <span aria-hidden="true">&nearr;</span>
+                  Details <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
-            </a>
+            </article>
 
-            <a
+            <article
               class="project-card"
               data-category="webapp"
-              href="https://ocr.scrawny.site"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-tool="ocr"
+              tabindex="0"
+              role="button"
+              aria-label="View details for Scrawny OCR"
             >
               <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
                 <!-- Scanner frame corners -->
@@ -308,7 +300,7 @@
               </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 7V5a2 2 0 0 1 2-2h2" />
                     <path d="M17 3h2a2 2 0 0 1 2 2v2" />
                     <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
@@ -318,7 +310,6 @@
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Web App</span>
-                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
@@ -326,30 +317,28 @@
                 <h3>Scrawny OCR</h3>
                 <p class="card-destination mono">ocr.scrawny.site</p>
                 <p class="card-description">
-                  Text extraction from Images and PDFs — fast client-side OCR running directly in
-                  your browser with zero server uploads.
+                  Client-side text extraction from images and PDFs with zero uploads.
                 </p>
               </div>
 
               <div class="card-footer">
                 <ul class="tech-list" aria-label="Technologies">
-                  <li>React</li>
-                  <li>TypeScript</li>
                   <li>ONNX</li>
                   <li>WebGPU</li>
                 </ul>
                 <span class="card-cta">
-                  Visit Subdomain <span aria-hidden="true">&nearr;</span>
+                  Details <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
-            </a>
+            </article>
 
-            <a
+            <article
               class="project-card"
               data-category="desktop"
-              href="https://enhancer.scrawny.site"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-tool="enhance"
+              tabindex="0"
+              role="button"
+              aria-label="View details for Scrawny Enhance"
             >
               <svg class="card-bg-svg" viewBox="0 0 240 190" fill="none" aria-hidden="true">
                 <!-- Split before/after image & video frame -->
@@ -372,13 +361,12 @@
               </svg>
               <div class="card-top">
                 <div class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
                   </svg>
                 </div>
                 <div class="card-badges">
                   <span class="badge badge-orange">Desktop Tools</span>
-                  <span class="badge badge-live">Live</span>
                 </div>
               </div>
 
@@ -386,23 +374,20 @@
                 <h3>Scrawny Enhance</h3>
                 <p class="card-destination mono">enhancer.scrawny.site</p>
                 <p class="card-description">
-                  Image and video enhancement via AI running locally on your machine — native
-                  desktop app built with Rust &amp; GPUI with zero cloud limits.
+                  Local AI image &amp; video upscaling built in Rust with zero cloud limits.
                 </p>
               </div>
 
               <div class="card-footer">
                 <ul class="tech-list" aria-label="Technologies">
                   <li>Rust</li>
-                  <li>GPUI</li>
                   <li>Local AI</li>
-                  <li>Image/Video</li>
                 </ul>
                 <span class="card-cta">
-                  Visit Site <span aria-hidden="true">&nearr;</span>
+                  Details <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
-            </a>
+            </article>
           </div>
         </section>
       </main>
@@ -423,6 +408,42 @@
           <span class="ad-placeholder-size">160 &times; 600</span>
         </div>
       </aside>
+    </div>
+
+    <div class="tool-modal" id="tool-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="tool-modal-backdrop" data-modal-close></div>
+      <div class="tool-modal-panel">
+        <header class="modal-topbar">
+          <div class="modal-badges">
+            <div class="card-icon" id="modal-icon" aria-hidden="true"></div>
+            <span class="badge badge-orange" id="modal-category"></span>
+            <span class="badge badge-live">Live</span>
+          </div>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close modal">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal-body">
+          <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <p class="modal-url mono" id="modal-url"></p>
+            <p class="modal-description" id="modal-description"></p>
+            <ul class="modal-features" id="modal-features"></ul>
+            <ul class="tech-list" id="modal-tech" aria-label="Technologies"></ul>
+          </div>
+          <div class="modal-visual" id="modal-visual" aria-hidden="true"></div>
+        </div>
+
+        <footer class="modal-footer">
+          <button class="modal-btn-secondary" type="button" data-modal-close>Close</button>
+          <a class="modal-btn-primary" id="modal-visit" href="#" target="_blank" rel="noopener noreferrer">
+            Open Landing Page <span aria-hidden="true">&nearr;</span>
+          </a>
+        </footer>
+      </div>
     </div>
 
     <script src="./script.js"></script>
