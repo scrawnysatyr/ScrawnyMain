@@ -170,12 +170,29 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   }
 
+  function openProjectSite(card) {
+    const key = card.getAttribute("data-tool");
+    const data = TOOL_DETAILS[key];
+    if (data?.url) {
+      window.open(data.url, "_blank", "noopener,noreferrer");
+    }
+  }
+
   cards.forEach((card) => {
-    card.addEventListener("click", () => openModal(card));
+    const detailsBtn = card.querySelector("[data-open-details]");
+    if (detailsBtn) {
+      detailsBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openModal(card);
+      });
+    }
+
+    card.addEventListener("click", () => openProjectSite(card));
     card.addEventListener("keydown", (e) => {
+      if (e.target !== card) return;
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        openModal(card);
+        openProjectSite(card);
       }
     });
   });

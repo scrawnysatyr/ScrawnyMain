@@ -150,7 +150,7 @@ body {
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: #27272c;
   color: var(--text-muted);
@@ -239,7 +239,7 @@ main {
   align-items: center;
   gap: 8px;
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: 8px;
   background: var(--accent-soft);
   border: 1px solid rgba(255, 115, 0, 0.3);
   color: #ff943d;
@@ -449,7 +449,7 @@ main {
 
 .badge {
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: 8px;
   font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -521,17 +521,26 @@ main {
 }
 
 .card-cta {
-  font-size: 0.85rem;
+  appearance: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-hover);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
   font-weight: 600;
   color: #ffffff;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  transition: color 0.2s ease, transform 0.2s ease;
+  gap: 5px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
-.project-card:hover .card-cta {
-  color: var(--accent);
+.card-cta:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: #ffffff;
 }
 
 /* Footer */
@@ -564,8 +573,8 @@ main {
 .tool-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(5, 5, 5, 0.9);
-  backdrop-filter: blur(12px);
+  background: rgba(5, 5, 5, 0.55);
+  backdrop-filter: blur(4px);
 }
 
 .tool-modal-panel {
@@ -602,17 +611,18 @@ main {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-hover);
   color: var(--text-muted);
   display: grid;
   place-items: center;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 .modal-close:hover {
   border-color: var(--accent);
+  background: var(--accent-soft);
   color: #ffffff;
 }
 
@@ -704,18 +714,19 @@ main {
   appearance: none;
   padding: 10px 18px;
   border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-hover);
+  color: #ffffff;
   font-family: var(--font-sans);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 .modal-btn-secondary:hover {
-  border-color: var(--text-muted);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.14);
   color: #ffffff;
 }
 
